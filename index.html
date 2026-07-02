@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Princess 👑</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffb6c1,#ffd1dc,#ffe4ec);
+overflow-x:hidden;
+text-align:center;
+color:white;
+}
+
+.container{
+padding:40px 20px;
+}
+
+h1{
+font-size:45px;
+margin-top:20px;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+max-width:700px;
+margin:auto;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+margin:30px auto;
+max-width:700px;
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:white;
+color:#ff4f87;
+font-weight:bold;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.hidden{
+display:none;
+margin-top:20px;
+font-size:24px;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.heart{
+position:fixed;
+color:#ff4f87;
+animation:fall linear infinite;
+font-size:20px;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+}
+100%{
+transform:translateY(110vh);
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>👑 Welcome My Princess 👑</h1>
+
+<p>
+إلى أميرتي الجميلة... ❤️
+<br><br>
+يمكن بينا مسافات،
+لكن مفيش أي مسافة تقدر تبعدك عن قلبي.
+</p>
+
+<div class="card">
+
+<h2>💌 رسالة ليكي</h2>
+
+<p>
+
+أميرة...
+
+يمكن مقدرش كل يوم أكون جنبك،
+لكن كل يوم بتكوني في بالي.
+
+يمكن مقدرش أمسك إيدك دلوقتي،
+لكن أوعدك إن قلبي عمره ما هيسيبك.
+
+كل مرة بتضحكي فيها...
+بحس إن الدنيا بقت أحسن.
+
+وكل مرة بشوف اسمك...
+ببتسم من غير ما أحس.
+
+أنا مش محتاج سبب علشان أحبك...
+
+لأنك ببساطة...
+أنتِ.
+
+❤️
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🌹 وعد</h2>
+
+<p>
+
+أوعدك...
+
+إني أفضل أقدرك...
+
+وأحترمك...
+
+وأفرح لفرحك...
+
+وأكون سند ليكي...
+
+وأحبك...
+
+كل يوم...
+
+أكتر من اليوم اللي قبله.
+
+</p>
+
+</div>
+
+<button onclick="showLove()">
+اضغطي هنا ❤️
+</button>
+
+<div class="hidden" id="love">
+
+<h2>
+
+I Love You So Much My Princess 👑❤️
+
+</h2>
+
+<p>
+
+وجودك أجمل هدية ربنا رزقني بيها.
+
+بحبك يا أميرتي...
+
+ومهما كانت المسافات...
+
+قلبي هيختارك كل مرة.
+
+❤️❤️❤️
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showLove(){
+document.getElementById("love").style.display="block";
+}
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(3+Math.random()*5)+"s";
+
+heart.style.fontSize=(15+Math.random()*20)+"px";
+
+heart.style.opacity=Math.random();
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
